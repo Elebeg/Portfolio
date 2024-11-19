@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const projectsSection = document.querySelector('.projects-section'); 
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const anchors = document.querySelectorAll('nav a[href^="#"]');
     let currentIndex = 0;
     let sliderInterval;
 
@@ -55,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     };
 
-    const anchors = document.querySelectorAll('nav a[href^="#"]');
     anchors.forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -68,9 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileNav = document.getElementById("mobile-nav");
 
     menuToggle.addEventListener("click", () => {
         const isVisible = mobileNav.style.display === "flex";
