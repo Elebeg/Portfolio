@@ -68,4 +68,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+
+    menuToggle.addEventListener("click", () => {
+        const isVisible = mobileNav.style.display === "flex";
+        mobileNav.style.display = isVisible ? "none" : "flex"; 
+    });
+
+    const navLinks = mobileNav.querySelectorAll("a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileNav.style.display = "none";
+        });
+    });
 });
