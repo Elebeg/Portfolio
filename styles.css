@@ -300,7 +300,7 @@ footer {
 }
 
 .social-links li a:hover {
-    color: #0e74d5; /* Cor ao passar o mouse */
+    color: #0e74d5; 
     transform: scale(1.2);
 }
 
