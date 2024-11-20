@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="menu-toggle" aria-label="Menu">
-        <i class="fas fa-bars"></i> 
-    </button>
+    <input hidden id="menu-toggle" type="checkbox">
+        <label class="icon-menu" for="menu-toggle" aria-label="Toggle Menu">
+            <div class="bar bar--1"></div>
+            <div class="bar bar--2"></div>
+            <div class="bar bar--3"></div>
+        </label>
     <nav id="mobile-nav">
         <ul class="left-links">
             <li>
@@ -22,7 +25,6 @@
             <li><a href="#technologies">Technologies</a></li>
             <li><a href="#projects">Projects</a></li>
         </ul>
-    
         <ul class="right-links">
             <li>
                 <a href="https://www.linkedin.com/in/lucas-schuler-foppa-24723b272/" target="_blank">
